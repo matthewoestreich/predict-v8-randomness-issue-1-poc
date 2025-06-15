@@ -14,11 +14,13 @@ async function test(sequence, expected) {
 
 (async () => {
 	try {
-    const staticResult = await test(STATIC_SEQUENCE, STATIC_EXPECTED);
+		const staticResult = await test(STATIC_SEQUENCE, STATIC_EXPECTED);
+		// for the console color
 		const staticColor = staticResult ? "\x1b[32m" : "\x1b[31m";
 		console.log(`\x1b[33mUsing NPM Package : Testing with static sequence (num predictions: ${STATIC_EXPECTED.length}) : Are Predictions Correct?\x1b[0m ${staticColor}${staticResult}\x1b[0m`);
 
-    const dynamicResult = await test(DYNAMIC_SEQUENCE, DYNAMIC_EXPECTED);
+		const dynamicResult = await test(DYNAMIC_SEQUENCE, DYNAMIC_EXPECTED);
+		// for the console color
 		const dynamicColor = dynamicResult ? "\x1b[32m" : "\x1b[31m";
 		console.log(`\x1b[33mUsing NPM Package : Testing with dynamic sequence (num predictions: ${DYNAMIC_EXPECTED.length}) : Are Predictions Correct?\x1b[0m ${dynamicColor}${dynamicResult}\x1b[0m`);
 	} catch (e) {
