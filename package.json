@@ -1,0 +1,20 @@
+{
+  "name": "predict-v8-randomness-issue-1-poc",
+  "version": "1.0.0",
+  "description": "POC for issue #1 in predict-v8-randomness repo",
+  "main": "index.js",
+  "scripts": {
+    "all": "npm run usingNPMPackage && npm run usingLocal",
+    "usingNPMPackage": "node usingNPMPackage.js",
+    "usingLocal": "tsx usingLocalV8RandomnessPredictor.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "predict-v8-randomness": "^1.0.35",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "z3-solver": "^4.15.1"
+  }
+}
