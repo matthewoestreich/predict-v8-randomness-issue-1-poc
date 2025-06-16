@@ -7,19 +7,19 @@ POC for issue #1 in predict-v8-randomness repo
 npm install
 ```
 
-2. To run `usingNPMPackage.js`, which uses the `predict-v8-randomness` NPM package:
+2. To run `usingLocalV8RandomnessPredictor.ts`, which uses the file located at `./predictors/V8RandomnessPredictor.ts` (this is copy/pasted from the `predict-v8-randomness` repo [here](https://github.com/matthewoestreich/predict-v8-randomness/blob/main/src/Predictors/V8/V8RandomnessPredictor.ts)):
 
 ```bash
-npm run usingNPMPackage
+npm run usingLocalV8
 ```
 
-3. To run `usingLocalV8RandomnessPredictor.ts`, which uses the file located at `./V8RandomnessPredictor.ts` (this is copy/pasted from the `predict-v8-randomness` repo [here](https://github.com/matthewoestreich/predict-v8-randomness/blob/main/src/Predictors/V8/V8RandomnessPredictor.ts)):
+3. To run `usingLocalChromeRandomnessPredictor.ts`, which uses the file located at `./predictors/ChromeRandomnessPredictor.ts` (this is copy/pasted from the `predict-v8-randomness` repo [here](https://github.com/matthewoestreich/predict-v8-randomness/blob/main/src/Predictors/Chrome/ChromeRandomnessPredictor.ts)):
 
 ```bash
-npm run usingLocal
+npm run usingLocalChrome
 ```
 
-4. To run both:
+4. To run all predictors:
 
 ```bash
 npm run all

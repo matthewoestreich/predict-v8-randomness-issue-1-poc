@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "POC for issue #1 in predict-v8-randomness repo",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "all": "npm run usingNPMPackage && npm run usingLocal",
-    "usingNPMPackage": "node usingNPMPackage.js",
-    "usingLocal": "tsx usingLocalV8RandomnessPredictor.ts"
+    "all": "npm run usingLocalV8 && npm run usingLocalChrome",
+    "usingLocalV8": "tsx usingLocalV8RandomnessPredictor.ts",
+    "usingLocalChrome": "tsx usingLocalChromeRandomnessPredictor.ts"
   },
   "keywords": [],
   "author": "",
